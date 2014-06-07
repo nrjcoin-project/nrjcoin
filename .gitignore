@@ -1,21 +1,42 @@
-# Compiled Object files
-*.slo
-*.lo
+src/*.exe
+src/nrjcoin
+src/nrjcoind
+src/test_nrjcoin
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
 *.o
-*.obj
+*.patch
+.nrjcoin
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Compilation and Qt preprocessor part
+*.qm
+Makefile
+Makefile.Debug
+Makefile.Release
+release
+bin
+object_script.nrjcoin-qt.Debug
+object_script.nrjcoin-qt.Release
+nrjcoin-qt_plugin_import.cpp
+nrjcoin-qt
+Nrjcoin-Qt.app
+share/nrjcoin-*-setup.exe
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Unit-tests
+Makefile.test
+nrjcoin-qt_test
 
-# Executables
-*.exe
-*.out
-*.app
+# Resources cpp
+qrc_*.cpp
+
+# Qt creator
+*.pro.user
+
+# Mac specific
+.DS_Store
+build
+
+!src/leveldb*/Makefile
