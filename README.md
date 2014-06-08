@@ -1,4 +1,4 @@
-Litecoin integration/staging tree
+Nrjcoin integration/staging tree
 ================================
 
 http://www.nrjcoin.org
