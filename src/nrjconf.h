@@ -25,7 +25,8 @@
 #define NRJ_BLOCKCOIN_PREMINING 100100000 //coins per gen block
 
 // Nrjcoin: 3.5 days to 3.0 days
-#define NRJ_TARGETTIMESPAN 3.0 * 24 * 60 * 60
+//3.0 * 24 * 60 * 60 3 days to 1 hour = 60 * 60
+#define NRJ_TARGETTIMESPAN 60*60; 
 // Nrjcoin: 2.5 minutes to 2.0 minutes
 #define NRJ_TARGETSPACING  2.0 * 60
 
