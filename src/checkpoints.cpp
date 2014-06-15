@@ -33,15 +33,21 @@ namespace Checkpoints
     // + Is surrounded by blocks with reasonable timestamps
     //   (no blocks before with a timestamp after, none after with
     //    timestamp before)
-    // + Contains no strange transactions
+    // + Contains no strange transaction
+    // SetBestChain: new best=b5b752ac8a2c2a8d45a9ac2f4870d7f59abc2657d34a72fd708417042f1b0645  
+    // height=21670  log2_work=37.712225  tx=21724  date=2014-06-08 20:15:10 progress=0.999751
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-        (0, uint256(NRJ_HASH_GENESIS_BLOCK))
+        (     0, uint256(NRJ_HASH_GENESIS_BLOCK))
+        (  1500, uint256("0xd3cc69c7b012630b042d74a34bc15568b805faae8c3f5c7ecd8dede197fc0663"))
+        (  4096, uint256("0xd3400d0d06b7ff7dcf70d77e660f8b3fef34d63a8ad6b7be8c17529c82fda29b"))
+        ( 16384, uint256("0x8c81c572763c2ae91c576506ebf4d54210a5eeb03747e3db73a1caa64463caf7"))
+        ( 21670, uint256("0xb5b752ac8a2c2a8d45a9ac2f4870d7f59abc2657d34a72fd708417042f1b0645"))
         ;
     static const CCheckpointData data = {
         &mapCheckpoints,
-        NRJ_NTIME, // * UNIX timestamp of last checkpoint block
-        0,    // * total number of transactions between genesis and last checkpoint
+        1402258510, // * UNIX timestamp of last checkpoint block
+        21724,    // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         12000.0     // * estimated number of transactions per day after checkpoint
     };
